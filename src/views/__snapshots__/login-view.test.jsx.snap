@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error view without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="Toastify"
+  />
+  <div
+    class="signup-wrapper"
+  >
+    <div
+      class="content"
+    >
+      <h4>
+        LOGIN FORM
+      </h4>
+    </div>
+    <div
+      class="field"
+    >
+      <label
+        class="label"
+      >
+        Email
+      </label>
+      <div
+        class="control has-icons-left has-icons-right"
+      >
+        <input
+          class="input"
+          placeholder="Please input your email"
+          type="email"
+          value=""
+        />
+        <span
+          class="icon is-small is-left"
+        >
+          <i
+            class="fas fa-envelope"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      class="field"
+    >
+      <p
+        class="control has-icons-left"
+      >
+        <input
+          class="input"
+          placeholder="Minimum eight characters, at least one letter, one number and one special character"
+          type="password"
+          value=""
+        />
+        <span
+          class="icon is-small is-left"
+        >
+          <i
+            class="fas fa-lock"
+          />
+        </span>
+      </p>
+    </div>
+    <div
+      class="field is-grouped"
+    >
+      <div
+        class="control"
+      >
+        <button
+          class="button is-link"
+          disabled=""
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

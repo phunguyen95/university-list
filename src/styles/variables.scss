@@ -1,0 +1,54 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/derived-variables";
+@import "node_modules/bulma/sass/utilities/mixins";
+
+$padding-mobile: 12px;
+$padding-desktop: 24px;
+
+$white: #ffffff;
+$black: #000000;
+$green-grab: #00b14f;
+$red-error: #ee6352;
+$yellow-warning: #f7c942;
+$grey-main: #363a45;
+$blue-main: #00a5cf;
+$green-hover: #44E38C;
+
+$blue-text-button: #3B92A0;
+$black-text: #1A1A1A;
+$black-text-2: #242A2E;
+$black-text-3: #50565E;
+$grey-text: #383E43;
+$grey-text-2: #868D95;
+$grey-text-3: #708598;
+$grey-text-4: #788487;
+$grey-text-5: #697078;
+$grey-text-6: #8C8C8C;
+$grey-border: #EDF1F4;
+$grey-border-2: #E5E9F0;
+$grey-border-3: #ECEFF1;
+$grey-field-background: rgba(246, 248, 251, 0.9);
+$grey-background-hover: #F3F6FB;
+$grey-bulk-form-subtitle: #9FA4AD;
+$grey-light-bg: #f7f7f7;
+
+$font-weight-lighter: 300;
+$font-weight-normal: 400;
+$font-weight-bolder: 500;
+
+$size-base: 1rem !default;
+
+$table-sticky-header-height: 300px !default;
+$table-background-color: $scheme-main !default;
+$table-row-active-background-color: $primary !default;
+$table-row-active-color: $primary-invert !default;
+
+$speed-slow: 150ms !default;
+$speed-slower: 250ms !default;
+
+$table-image-cell-image-width: $size-base * 1.5 !default;
+$table-image-cell-image-height: $table-image-cell-image-width !default;
+$table-image-cell-collapsed-image-width: $table-image-cell-image-width * 4 !default;
+$table-image-cell-collapsed-image-height: $table-image-cell-collapsed-image-width !default;
+
+$table-row-toggle-cell-width: 40px;

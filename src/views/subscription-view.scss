@@ -1,0 +1,94 @@
+@import '~bulma/bulma.sass';
+@import '~bulma/bulma.sass';
+.bd-index-section {
+    --bd-section-vertical: 1.5rem;
+    --bd-section-horizontal: 1.5rem;
+    --bd-section-h: 171deg;
+    --bd-index-vertical: 6rem;
+    background-image: linear-gradient(180deg, hsla(var(--bd-section-h), 100%, 67%, .1), transparent var(--bd-index-vertical));
+    background-repeat: repeat-x;
+    padding-bottom: var(--bd-index-vertical);
+    padding-top: var(--bd-index-vertical);
+}
+
+.bd-index-section .bd-tw {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 28em;
+}
+.bd-newsletter{
+    margin-top: 15rem;
+}
+.subheading {
+    color: #7a7a7a;
+    font-size: 1.5rem;
+}
+.bd-newsletter-box {
+    background-color: #fff;
+    background-image: url("../assets//newsletter-strip.png");
+    background-repeat: repeat-x;
+    background-size: 96px var(--newsletter-strip-size);
+    border-radius: 1.5em;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, .05);
+}
+.bd-newsletter-box .icon {
+    align-self: flex-start;
+}
+.bd-newsletter-box form .input:not(:focus):not(:hover) {
+    border-color: #dbdbdb;
+}
+@media screen and (max-width:768px) {
+    .bd-newsletter-box {
+    padding-top: calc(1.5rem + var(--newsletter-strip-size));
+    }
+    .bd-newsletter{
+        margin-top: 12rem;
+    }
+    .bd-newsletter-fields{
+        margin-top: 1.5rem;
+    }
+    .subscribe-button{
+        text-align: center;
+    }
+    .subheading{
+        font-size: 1rem;
+    }
+    .heading-newsletter{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:769px), print {
+    .bd-newsletter-box {
+    padding-top: 6rem
+}
+}
+.bd-newsletter-heading {
+    display: flex;
+    justify-content: space-around;
+}
+
+.smallIcon{
+    height: 1.125rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+.subscribe-button{
+    margin-top: 1.5rem;
+}
+@media screen and (max-width: 1023px){
+.bd-newsletter-heading{
+    display: block;
+    padding: 3rem;
+}
+.spam-free{
+    display:none;
+}
+}
+@media screen and (min-width: 1216px){
+    .spam-free {
+        top: -100%;
+        right: 95%;
+        position: absolute;
+        display: block;
+    }
+}

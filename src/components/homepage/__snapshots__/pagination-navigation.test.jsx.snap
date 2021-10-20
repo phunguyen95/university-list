@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders pagination navigaton view without crashing 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="pagination"
+    class="pagination"
+    role="navigation"
+  >
+    <a
+      class="pagination-previous"
+      disabled=""
+      title="This is the first page"
+    >
+      Previous
+    </a>
+    <a
+      class="pagination-next"
+    >
+      Next page
+    </a>
+    <ul
+      class="pagination-list"
+    >
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Page 1"
+          class="pagination-link is-current"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 2"
+          class="pagination-link"
+        >
+          2
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 3"
+          class="pagination-link"
+        >
+          3
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;

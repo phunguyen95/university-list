@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error view without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="bd-newsletter"
+    id="newsletter"
+  >
+    <div
+      class="Toastify"
+    />
+    <section
+      class="bd-index-section bd-newsletter-box"
+    >
+      <div
+        class="bd-newsletter-heading"
+      >
+        <h2
+          class="title has-text-black mb-0 is-size-2-widescreen"
+        >
+          <span
+            class="icon has-text-primary is-size-2-widescreen smallIcon"
+          >
+             
+            <i
+              class="fas fa-paper-plane"
+            />
+             
+          </span>
+          <strong
+            class="heading-newsletter"
+          >
+            Newsletter
+          </strong>
+          <br />
+          <small
+            class="subheading"
+          >
+            Features, releases, showcase… stay in the loop!
+          </small>
+           
+        </h2>
+        <div
+          class="bd-newsletter-fields"
+        >
+          <div
+            class="control has-icons-left is-expanded"
+          >
+            <input
+              class="input is-medium is-primary"
+              name="email"
+              placeholder="email address"
+              required=""
+              type="email"
+              value=""
+            />
+            <span
+              class="icon is-small is-left"
+            >
+              <i
+                class="fas fa-envelope"
+              />
+               
+            </span>
+            <img
+              class="spam-free"
+              height="88"
+              src="https://bulma.io/images/drawing/spam-free.png"
+              width="112"
+            />
+          </div>
+          <div
+            class="control subscribe-button"
+          >
+            <button
+              class="button is-medium is-primary subscribe-button"
+            >
+              <strong>
+                Subscribe
+              </strong>
+               
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;

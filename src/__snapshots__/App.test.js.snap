@@ -1,0 +1,511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<DocumentFragment>
+  <div
+    class="Toastify"
+  />
+  <div
+    class="rootLayout"
+  >
+    <div
+      class="backgroundImage"
+    />
+    <div
+      class="layout"
+    >
+      <nav
+        aria-label="main navigation"
+        class="navbar"
+        role="navigation"
+      >
+        <div
+          class="navbar-brand"
+        >
+          <a
+            class="navbar-item"
+            href="/"
+          >
+            <img
+              alt="Logo"
+              height="28"
+              src="https://bulma.io/images/bulma-logo.png"
+              width="112"
+            />
+          </a>
+          <a
+            aria-expanded="false"
+            aria-label="menu"
+            class="navbar-burger burger "
+            data-target="navbarBasicExample"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+            />
+            <span
+              aria-hidden="true"
+            />
+            <span
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+        <div
+          class="navbar-menu "
+          id="navbarBasicExample"
+        >
+          <div
+            class="navbar-start"
+          >
+            <div
+              class="navbar-item"
+            >
+              <a
+                class="navbar-item"
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                class="navbar-item"
+                href="/subscription"
+              >
+                Subscription
+              </a>
+              <a
+                class="navbar-item"
+                href="/register"
+              >
+                Register
+              </a>
+              <a
+                class="navbar-item"
+                href="/login"
+              >
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <h1
+          class="title"
+        >
+          University List
+        </h1>
+        <div
+          class="field"
+        >
+          <p
+            class="control is-expanded has-icons-right"
+          >
+            <input
+              class="input searchInput"
+              placeholder="Search..."
+              type="search"
+              value=""
+            />
+            <span
+              class="icon is-small is-right"
+            >
+              <i
+                class="fas fa-search"
+              />
+            </span>
+          </p>
+        </div>
+        <section
+          class="section"
+        >
+          <h4>
+            Total 0 seach results
+          </h4>
+          <label
+            class="label sortBy"
+          >
+            Sort By:
+          </label>
+          <div
+            class="select is-normal"
+          >
+            <select>
+              <option
+                value="country"
+              >
+                Country
+              </option>
+              <option
+                selected=""
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </div>
+          <div
+            class="level-item"
+          >
+            <small>
+              Page 1 of 1 
+            </small>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="b-table"
+            >
+              <div
+                class="table-wrapper has-mobile-cards"
+              >
+                <table
+                  class="table is-fullwidth is-striped is-hoverable is-fullwidth"
+                >
+                  <thead>
+                    <tr>
+                      <th>
+                        No.
+                      </th>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Country
+                      </th>
+                      <th>
+                        Website
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="is-empty"
+                    >
+                      <td
+                        colspan="7"
+                      >
+                        <section
+                          class="section"
+                        >
+                          <div
+                            class="content has-text-grey has-text-centered"
+                          >
+                            <p>
+                              <span
+                                class="icon is-large"
+                              >
+                                <i
+                                  class="mdi mdi-emoticon-sad mdi-48px"
+                                />
+                              </span>
+                            </p>
+                            <p>
+                              Nothing's there…
+                            </p>
+                          </div>
+                        </section>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="notification"
+              >
+                <div
+                  class="level"
+                >
+                  <div
+                    class="level-left"
+                  >
+                    <div
+                      class="level-item"
+                    >
+                      <div
+                        class="buttons has-addons"
+                      />
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <button
+                        class="pagination-previous"
+                        disabled=""
+                      >
+                        Previous
+                      </button>
+                      <button
+                        class="pagination-next"
+                        disabled=""
+                      >
+                        Next page
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders learn react link 1`] = `
+<DocumentFragment>
+  <div
+    class="Toastify"
+  />
+  <div
+    class="rootLayout"
+  >
+    <div
+      class="backgroundImage"
+    />
+    <div
+      class="layout"
+    >
+      <nav
+        aria-label="main navigation"
+        class="navbar"
+        role="navigation"
+      >
+        <div
+          class="navbar-brand"
+        >
+          <a
+            class="navbar-item"
+            href="/"
+          >
+            <img
+              alt="Logo"
+              height="28"
+              src="https://bulma.io/images/bulma-logo.png"
+              width="112"
+            />
+          </a>
+          <a
+            aria-expanded="false"
+            aria-label="menu"
+            class="navbar-burger burger "
+            data-target="navbarBasicExample"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+            />
+            <span
+              aria-hidden="true"
+            />
+            <span
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+        <div
+          class="navbar-menu "
+          id="navbarBasicExample"
+        >
+          <div
+            class="navbar-start"
+          >
+            <div
+              class="navbar-item"
+            >
+              <a
+                class="navbar-item"
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                class="navbar-item"
+                href="/subscription"
+              >
+                Subscription
+              </a>
+              <a
+                class="navbar-item"
+                href="/register"
+              >
+                Register
+              </a>
+              <a
+                class="navbar-item"
+                href="/login"
+              >
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <h1
+          class="title"
+        >
+          University List
+        </h1>
+        <div
+          class="field"
+        >
+          <p
+            class="control is-expanded has-icons-right"
+          >
+            <input
+              class="input searchInput"
+              placeholder="Search..."
+              type="search"
+              value=""
+            />
+            <span
+              class="icon is-small is-right"
+            >
+              <i
+                class="fas fa-search"
+              />
+            </span>
+          </p>
+        </div>
+        <section
+          class="section"
+        >
+          <h4>
+            Total 0 seach results
+          </h4>
+          <label
+            class="label sortBy"
+          >
+            Sort By:
+          </label>
+          <div
+            class="select is-normal"
+          >
+            <select>
+              <option
+                value="country"
+              >
+                Country
+              </option>
+              <option
+                selected=""
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </div>
+          <div
+            class="level-item"
+          >
+            <small>
+              Page 1 of 1 
+            </small>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="b-table"
+            >
+              <div
+                class="table-wrapper has-mobile-cards"
+              >
+                <table
+                  class="table is-fullwidth is-striped is-hoverable is-fullwidth"
+                >
+                  <thead>
+                    <tr>
+                      <th>
+                        No.
+                      </th>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Country
+                      </th>
+                      <th>
+                        Website
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="is-empty"
+                    >
+                      <td
+                        colspan="7"
+                      >
+                        <section
+                          class="section"
+                        >
+                          <div
+                            class="content has-text-grey has-text-centered"
+                          >
+                            <p>
+                              <span
+                                class="icon is-large"
+                              >
+                                <i
+                                  class="mdi mdi-emoticon-sad mdi-48px"
+                                />
+                              </span>
+                            </p>
+                            <p>
+                              Nothing's there…
+                            </p>
+                          </div>
+                        </section>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="notification"
+              >
+                <div
+                  class="level"
+                >
+                  <div
+                    class="level-left"
+                  >
+                    <div
+                      class="level-item"
+                    >
+                      <div
+                        class="buttons has-addons"
+                      />
+                    </div>
+                    <div
+                      class="level-right"
+                    >
+                      <button
+                        class="pagination-previous"
+                        disabled=""
+                      >
+                        Previous
+                      </button>
+                      <button
+                        class="pagination-next"
+                        disabled=""
+                      >
+                        Next page
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
