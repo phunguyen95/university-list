@@ -15,7 +15,7 @@ const {
 
 describe("firebase unit test suite", () => {
   beforeAll(async () => {
-    jest.setTimeout(10000);
+    jest.setTimeout(20000);
     firebase.initializeApp(firebaseConfig);
   });
   beforeEach(async () => {

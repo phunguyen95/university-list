@@ -17,7 +17,6 @@ export const getSubscribedList = () => {
   return db.collection("subscribeList").get();
 };
 export const signUp = (email, password, setErrors, setToken) => {
-  console.log("email", email);
   return new Promise((resolve, reject) => {
     firebase
       .auth()
@@ -37,8 +36,6 @@ export const signUp = (email, password, setErrors, setToken) => {
 };
 
 export const signIn = (email, password, setErrors, setToken) => {
-  console.log("email", email);
-  console.log("password", password);
   return new Promise((resolve, reject) => {
     firebase
       .auth()

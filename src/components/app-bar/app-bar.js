@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import _isEmpty from "lodash/isEmpty";
 import { Link } from "react-router-dom";
-import css from "./app-bar.scss";
+import "./app-bar.scss";
 import { firebaseAuth } from "../../provider/AuthProvider";
 import { TOKEN_LOGIN_KEY } from "../../constants/app-constant";
 export default function Navbar() {

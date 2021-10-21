@@ -15,7 +15,6 @@ const AuthProvider = (props) => {
 
   useEffect(() => {
     if (errors.length > 0) {
-      console.log("errors", errors);
       toast.warn("Sorry,there's unexpected error, please try again later", {});
       setIsLoading(false);
       setErrors([]);
@@ -31,6 +30,7 @@ const AuthProvider = (props) => {
   };
   const handleSignout = () => {
     logout(setErrors, setToken);
+    toast.info("You have been log out successfully", {});
   };
 
   return (

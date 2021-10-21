@@ -5,15 +5,15 @@ import useDebounce from "../hooks/useDebounce";
 import _isEmpty from "lodash/isEmpty";
 import "./homepage-view.scss";
 import UniversityTable from "../components/homepage/university-table";
-import {SORT_BY_NAME,SORT_BY_COUNTRY} from '../constants/app-constant';
+import {SORT_BY_NAME,TOTAL_ITEM_PER_PAGE,SEARCH_TEXT_INTERVAL} from '../constants/app-constant';
 export default function HomePageView() {
-  const pageSize = 20;
+  const pageSize = TOTAL_ITEM_PER_PAGE;
   const [universitiesData, setUniversitiesData] = useState([]);
   const [searchText, updateSearchText] = useInputState("");
   const [isSearching, setIsSearching] = useState(false);
   const [currentSearchResult, setCurrentSearchResult] = useState([]);
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
-  const debouncedSearchTerm = useDebounce(searchText, 700);
+  const debouncedSearchTerm = useDebounce(searchText, SEARCH_TEXT_INTERVAL); //wait 700ms
 
   useEffect(() => {
     async function makeCall() {
@@ -23,7 +23,7 @@ export default function HomePageView() {
       setIsSearching(false);
       const sortedUniversities = sortedByAlphabet(response.data,'name')
       setUniversitiesData(sortedUniversities);
-      setCurrentSearchResult(sortedUniversities.slice(0, 20));
+      setCurrentSearchResult(sortedUniversities.slice(0, TOTAL_ITEM_PER_PAGE));
     }
     if (!_isEmpty(debouncedSearchTerm)) {
       setIsSearching(true);
@@ -42,7 +42,7 @@ export default function HomePageView() {
     setCurrentPageIndex(pageNumber);
     const currentIndex = pageNumber - 1;
     setCurrentSearchResult(
-      universitiesData.slice(currentIndex * 20, pageSize * pageNumber)
+      universitiesData.slice(currentIndex * TOTAL_ITEM_PER_PAGE, pageSize * pageNumber)
     );
     return currentSearchResult;
   };
@@ -55,14 +55,14 @@ export default function HomePageView() {
     const currentIndex = pageNumber - 1;
     setCurrentPageIndex(pageNumber);
     setCurrentSearchResult(
-      universitiesData.slice(currentIndex * 20, pageSize * pageNumber)
+      universitiesData.slice(currentIndex * TOTAL_ITEM_PER_PAGE, pageSize * pageNumber)
     );
     return currentSearchResult;
   };
 
   const handleNextPage = () => {
     const totalCount = universitiesData.length;
-    if (currentPageIndex === Math.round(totalCount / 20)) {
+    if (currentPageIndex === Math.round(totalCount / TOTAL_ITEM_PER_PAGE)) {
       return;
     }
 
@@ -70,7 +70,7 @@ export default function HomePageView() {
     const currentIndex = pageNumber - 1;
     setCurrentPageIndex(pageNumber);
     setCurrentSearchResult(
-      universitiesData.slice(currentIndex * 20, pageSize * pageNumber)
+      universitiesData.slice(currentIndex * TOTAL_ITEM_PER_PAGE, pageSize * pageNumber)
     );
     return currentSearchResult;
   };
@@ -84,13 +84,13 @@ export default function HomePageView() {
   const handleSortByName =() => {
       const sortedUniversitiesData = sortedByAlphabet(universitiesData,'name')
     setUniversitiesData(sortedUniversitiesData)
-    setCurrentSearchResult(sortedUniversitiesData.slice(0,20))
+    setCurrentSearchResult(sortedUniversitiesData.slice(0,TOTAL_ITEM_PER_PAGE))
   }
 
   const handleSortByCountry = () => {
     const sortedUniversitiesData = sortedByAlphabet(universitiesData,'country')
     setUniversitiesData(sortedUniversitiesData)
-    setCurrentSearchResult(sortedUniversitiesData.slice(0,20))
+    setCurrentSearchResult(sortedUniversitiesData.slice(0,TOTAL_ITEM_PER_PAGE))
 }
 
   const sortedByAlphabet = (universityList, key) => {

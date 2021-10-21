@@ -37,6 +37,5 @@ test("renders signup view without crashing", () => {
     </Router>
   );
 
-  console.log('asfragment',asFragment())
   expect(asFragment()).toMatchSnapshot();
 });

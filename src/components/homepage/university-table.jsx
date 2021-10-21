@@ -4,7 +4,7 @@ import UniversityTableContent from "./university-table-content";
 import UniversityTableHeading from "./university-table-heading";
 import classnames from "classnames";
 import { favouriteUniList } from "../../provider/FavouriteProvider";
-import { FAVOURITES_STORAGE_KEY } from "../../constants/app-constant";
+import { FAVOURITES_STORAGE_KEY,MAX_PAGE_VISIBLE,MAX_PAGE_TO_LOOP,TOTAL_ITEM_PER_PAGE } from "../../constants/app-constant";
 import _isEmpty from 'lodash/isEmpty'
 export default function UniversityTable({
   data,
@@ -18,9 +18,9 @@ export default function UniversityTable({
 }) {
   const { favouriteList, setFavouriteList } = useContext(favouriteUniList);
 
-  let totalPage = Math.round(totalCount / 20);
+  let totalPage = Math.round(totalCount / TOTAL_ITEM_PER_PAGE);
   const renderTableContent = () => {
-    if (data.length > 0) {
+    if (data && data.length > 0) {
       return data.map((uniInfo, index) => (
         <UniversityTableContent
           uniInfo={uniInfo}
@@ -69,14 +69,14 @@ export default function UniversityTable({
   const renderPaginationOption = () => {
     let render = [];
     for (let i = 1; i <= totalPage; i++) {
-      if (i === 10) {
+      if (i === MAX_PAGE_TO_LOOP) {
         render.push(<span className="pagination-ellipsis">&hellip;</span>);
-      } else if (i === 11) {
+      } else if (i === MAX_PAGE_VISIBLE) {
         render.push(
           <Fragment>
             <button
               key={i}
-              onClick={() => handlePagination(i)}
+              onClick={() => handlePagination(totalPage)}
               type="button"
               className={classnames("button", {
                 "is-current": currentPageIndex === i,
@@ -108,10 +108,10 @@ export default function UniversityTable({
   };
 
   const renderTotalPageNumber = () => {
-    if (totalPage === 0 && currentPageIndex === 0) {
+    if (totalPage === 0) {
       return (
         <div className="level-item">
-          <small>{`Page ${currentPageIndex + 1} of ${totalPage + 1} `}</small>
+          <small>{`Page ${currentPageIndex} of ${totalPage + 1} `}</small>
         </div>
       );
     }
@@ -137,13 +137,13 @@ export default function UniversityTable({
         <div
           className={classnames("b-table", {
             "is-loading": isSearching,
-            "has-pagination": data.length > 0,
+            "has-pagination": data && data.length > 0,
           })}
         >
           <div className="table-wrapper has-mobile-cards">
             <table className="table is-fullwidth is-striped is-hoverable is-fullwidth">
               <UniversityTableHeading />
-              <tbody>{renderTableContent()}</tbody>
+              <tbody key ="tbody">{renderTableContent()}</tbody>
             </table>
           </div>
           <div className="notification">
