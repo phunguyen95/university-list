@@ -12,7 +12,7 @@ Displaying list of universities from all over the world. The application contain
 +User is able to **search/sort** from ** favourite list**
 
 ## Available Scripts
-
+EsLint is already integrated and will be triggered when project start
 In the project directory, you can run:
 
 ### `yarn start`
