@@ -2,12 +2,15 @@
 
 Displaying list of universities from all over the world. The application contain following features:\
 +Displaying list of universities **sorted** by name/country\
++**Pagination**, each pages will have max 20 items
++**Responsive**, work well from all devices
 +User is able to **search** by university's name/country\
 +User is able to **subscribe** to the newsletter (duplicated email will be prevented)\
 +handled 404 page\
 +User is able to **register**/**login**/**logout**\
 +User is able to **add**/**remove** favourite university after login successfully
 +User is able to **search/sort** from ** favourite list**
+
 ## Available Scripts
 
 In the project directory, you can run:
